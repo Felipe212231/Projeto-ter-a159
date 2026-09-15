@@ -1,0 +1,198 @@
+/* 
+   O seletor * seleciona todos os elementos da página.
+   O box-sizing facilita o controle dos tamanhos dos elementos.
+*/
+* {
+    box-sizing: border-box;
+}
+
+
+/* 
+   Estilos gerais do corpo da página.
+   A tag body contém todo o conteúdo visível do site.
+*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f7;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/*
+   Estilo do cabeçalho.
+   A tag header representa o cabeçalho da página.
+*/
+header {
+    background-color: #176b3a;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+/* Título principal */
+header h1 {
+    margin-bottom: 10px;
+}
+
+
+/* Texto do cabeçalho */
+header p {
+    margin: 0;
+}
+
+
+/*
+   main representa o conteúdo principal da página.
+*/
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+
+/*
+   Estilo do título da seção.
+*/
+.destaques h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/*
+   .cards é o container dos três cards.
+
+   Aqui usamos FLEXBOX.
+
+   display: flex;
+   transforma o elemento em um container flexível.
+
+   gap:
+   cria espaço entre os cards.
+
+   flex-wrap:
+   permite que os cards quebrem linha em telas menores.
+*/
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/*
+   Cada .card representa um destaque.
+
+   flex: 1:
+   permite que os cards ocupem o espaço disponível.
+
+   min-width:
+   evita que o card fique pequeno demais.
+*/
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+}
+
+
+/* Título de cada card */
+.card h3 {
+    color: #176b3a;
+    margin-top: 0;
+}
+
+
+/*
+   Texto que apresenta o mito.
+*/
+.mito {
+    font-weight: bold;
+    color: #333;
+}
+
+
+/*
+   Estilo do botão.
+
+   O botão será utilizado para mostrar a resposta
+   através do JavaScript.
+*/
+button {
+    background-color: #176b3a;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/*
+   Quando o usuário passa o mouse sobre o botão,
+   sua cor muda.
+*/
+button:hover {
+    background-color: #0f4d29;
+}
+
+
+/*
+   A classe .resposta começa escondida.
+
+   O JavaScript vai alterar essa propriedade
+   quando o estudante clicar no botão.
+*/
+.resposta {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f5ec;
+    border-left: 5px solid #176b3a;
+    border-radius: 5px;
+}
+
+
+/*
+   Estilo do rodapé.
+*/
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+/*
+   RESPONSIVIDADE
+
+   Quando a tela tiver no máximo 700px,
+   os cards passam a ocupar uma área maior.
+
+   Isso ajuda o site a funcionar em celulares.
+*/
+@media (max-width: 700px) {
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 500px;
+    }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Define a codificação de caracteres da página -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página se adaptar a celulares e tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que aparece na aba do navegador -->
+    <title>Destaques - Mitos e Verdades no Futebol</title>
+
+    <!-- Liga o arquivo HTML ao arquivo de estilos CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho principal da página -->
+    <header>
+        <h1>Destaques</h1>
+
+        <p>
+            Mitos e verdades sobre oportunidades e dificuldades
+            para quem sonha em jogar futebol.
+        </p>
+    </header>
+
+
+    <!-- Área principal do conteúdo -->
+    <main>
+
+        <!-- Seção que reúne os três destaques -->
+        <section class="destaques">
+
+            <!-- Título da seção -->
+            <h2>Verificação de fatos</h2>
+
+            <!-- Container que organiza os cards com Flexbox -->
+            <div class="cards">
+
+                <!-- Primeiro card -->
+                <article class="card">
+
+                    <h3>Mito ou verdade?</h3>
+
+                    <p class="mito">
+                        "Hoje em dia, para conseguir uma oportunidade
+                        no futebol, basta ter talento."
+                    </p>
+
+                    <!-- Botão que será utilizado pelo JavaScript -->
+                    <button onclick="mostrarResposta(1)">
+                        Mostrar resposta
+                    </button>
+
+                    <!-- Resposta inicialmente escondida -->
+                    <p id="resposta1" class="resposta">
+                        MITO.
+                        O talento é importante, mas uma oportunidade
+                        também pode depender de treinamento, preparação,
+                        contatos, estrutura disponível e processos de
+                        seleção.
+                    </p>
+
+                </article>
+
+
+                <!-- Segundo card -->
+                <article class="card">
+
+                    <h3>Mito ou verdade?</h3>
+
+                    <p class="mito">
+                        "Todos os empresários e coordenadores de futebol
+                        pensam apenas em dinheiro."
+                    </p>
+
+                    <button onclick="mostrarResposta(2)">
+                        Mostrar resposta
+                    </button>
+
+                    <p id="resposta2" class="resposta">
+                        MITO.
+                        Não é possível afirmar isso sobre todas as pessoas.
+                        Existem profissionais com diferentes objetivos,
+                        responsabilidades e formas de trabalhar.
+                    </p>
+
+                </article>
+
+
+                <!-- Terceiro card -->
+                <article class="card">
+
+                    <h3>Mito ou verdade?</h3>
+
+                    <p class="mito">
+                        "A falta de estrutura pode dificultar o caminho
+                        de jovens que sonham em jogar futebol."
+                    </p>
+
+                    <button onclick="mostrarResposta(3)">
+                        Mostrar resposta
+                    </button>
+
+                    <p id="resposta3" class="resposta">
+                        VERDADE.
+                        A estrutura disponível pode influenciar o acesso
+                        a treinamento, competições, equipamentos,
+                        profissionais e oportunidades.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>
+            Projeto educativo sobre desenvolvimento web e verificação de fatos.
+        </p>
+    </footer>
+
+
+    <!-- Liga o arquivo JavaScript à página -->
+    <script src="JAVA SCRIPT.js"></script>
+
+</body>
+
+</html>
